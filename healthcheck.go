@@ -5,7 +5,7 @@ import (
 	"net/http"
 )
 
-func healthCheckHandler(w http.ResponseWriter, r *http.Request) {
+func HealthCheckHandler(w http.ResponseWriter, r *http.Request) {
 	// Cria uma resposta JSON indicando que o servidor está ativo
 	response := map[string]string{
 		"status":  "OK",
